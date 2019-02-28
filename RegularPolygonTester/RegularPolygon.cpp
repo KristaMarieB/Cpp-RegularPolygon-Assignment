@@ -32,6 +32,25 @@ double RegularPolygon::get_side() const
 	return side;
 }
 
+void RegularPolygon::set_x(double x)
+{
+	this->x = x;
+}
+
+double RegularPolygon::get_x() const
+{
+	return x;
+}
+
+void RegularPolygon::set_y(double y)
+{
+	this->y = y;
+}
+
+double RegularPolygon::get_y() const
+{
+	return y;
+}
 
 RegularPolygon::~RegularPolygon()
 {
