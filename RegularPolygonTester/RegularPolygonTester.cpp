@@ -12,6 +12,9 @@ int main() {
 	RegularPolygon rp2(5, 3.5);
 	RegularPolygon rp3(15);
 	RegularPolygon rp4(7, 6.5, 0, 0);
+	RegularPolygon rp5;
+	rp5.set_n(10);
+	rp5.set_side(22);
 	
 	int testN = rp1.get_n();
 	double testSide = rp1.get_side();
@@ -64,6 +67,13 @@ int main() {
 	cout << "X-Coordinate: " << testX << endl;
 	cout << "Y-Coordinate: " << testY << endl;
 	cout << "Perimeter: " << testP << endl << endl;
+
+	cout << "Polygon 5" << endl;
+	cout << "Number of sides: " << rp5.get_n() << endl;
+	cout << "Length of sides: " << rp5.get_side() << endl;
+	cout << "X-Coordinate: " << rp5.get_x() << endl;
+	cout << "Y-Coordinate: " << rp5.get_y() << endl;
+	cout << "Perimeter: " << rp5.getPerimeter(rp5.get_n(), rp5.get_side()) << endl << endl;
 
 	system("pause");
 	return 1;
