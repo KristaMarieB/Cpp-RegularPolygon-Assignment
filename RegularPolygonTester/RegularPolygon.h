@@ -6,11 +6,10 @@ class RegularPolygon
 {
 public:
 	// constructors 
-	RegularPolygon(int = 3, double = 1, double = 0, double = 0); // default
-	//RegularPolygon(int, double, double, double); // custom
+	RegularPolygon(int = 3, double = 1, double = 0, double = 0); 
 
 	// getters & setters
-	void set_n(int); // n is the length of a side
+	void set_n(int); 
 	int get_n() const;
 
 	void set_side(double); 
@@ -28,8 +27,8 @@ public:
 	~RegularPolygon();
 
 private:
-	int n;			// length of a side
-	double side;	// number of sides
+	int n;			// number of sides
+	double side;	// length of a side
 	double x;		// x-coordinate of polygon's center		
 	double y;		// y-coordinate of polygon's center
 };

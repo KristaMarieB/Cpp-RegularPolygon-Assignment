@@ -11,14 +11,6 @@ RegularPolygon::RegularPolygon(int n, double side, double x, double y)
 
 }
 
-//RegularPolygon::RegularPolygon(int n, double side, double x, double y) 
-//{
-//	this->n = n;
-//	this->side = side;
-//	this->x = x;
-//	this->y = y;
-//}
-
 void RegularPolygon::set_n(int n) 
 {
 	this->n = n;
