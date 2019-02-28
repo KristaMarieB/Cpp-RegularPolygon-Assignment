@@ -1,14 +1,18 @@
 #pragma once
+#ifndef REGULARPOLYGON_H
+#define REGULARPOLYGON_H
+
 class RegularPolygon
 {
 public:
-	RegularPolygon();
+	// constructors 
+	RegularPolygon(int = 3, double = 1, double = 0, double = 0); 
 
 	// getters & setters
-	void set_n(int);
+	void set_n(int); 
 	int get_n() const;
 
-	void set_side(double);
+	void set_side(double); 
 	double get_side() const;
 
 	void set_x(double);
@@ -17,12 +21,16 @@ public:
 	void set_y(double);
 	double get_y() const;
 
+	// other methods
+	double getPerimeter(int, double);
+
 	~RegularPolygon();
 
 private:
-	int n = 3;
-	double side = 1;
-	double x = 0;
-	double y = 0;
+	int n;			// number of sides
+	double side;	// length of a side
+	double x;		// x-coordinate of polygon's center		
+	double y;		// y-coordinate of polygon's center
 };
 
+#endif

@@ -2,14 +2,13 @@
 
 
 
-RegularPolygon::RegularPolygon()
+RegularPolygon::RegularPolygon(int n, double side, double x, double y)
 {
-	// Creates default polygon using default values
-}
+	set_n(n);
+	set_side(side);
+	set_x(x);
+	set_y(y);
 
-RegularPolygon::RegularPolygon(int n, double side, double x, double y) 
-{
-	// Custom polygon constructor
 }
 
 void RegularPolygon::set_n(int n) 
@@ -32,6 +31,30 @@ double RegularPolygon::get_side() const
 	return side;
 }
 
+void RegularPolygon::set_x(double x)
+{
+	this->x = x;
+}
+
+double RegularPolygon::get_x() const
+{
+	return x;
+}
+
+void RegularPolygon::set_y(double y)
+{
+	this->y = y;
+}
+
+double RegularPolygon::get_y() const
+{
+	return y;
+}
+
+double RegularPolygon::getPerimeter(int n, double side)
+{
+	return n * side;
+}
 
 RegularPolygon::~RegularPolygon()
 {
