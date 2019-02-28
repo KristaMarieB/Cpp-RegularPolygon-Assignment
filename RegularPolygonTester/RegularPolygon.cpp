@@ -52,6 +52,11 @@ double RegularPolygon::get_y() const
 	return y;
 }
 
+double RegularPolygon::getPerimeter(int n, double side)
+{
+	return n * side;
+}
+
 RegularPolygon::~RegularPolygon()
 {
 }
