@@ -2,15 +2,22 @@
 
 
 
-RegularPolygon::RegularPolygon()
+RegularPolygon::RegularPolygon(int n, double side, double x, double y)
 {
-	// Creates default polygon using default values
+	set_n(n);
+	set_side(side);
+	set_x(x);
+	set_y(y);
+
 }
 
-RegularPolygon::RegularPolygon(int n, double side, double x, double y) 
-{
-	// Custom polygon constructor
-}
+//RegularPolygon::RegularPolygon(int n, double side, double x, double y) 
+//{
+//	this->n = n;
+//	this->side = side;
+//	this->x = x;
+//	this->y = y;
+//}
 
 void RegularPolygon::set_n(int n) 
 {
