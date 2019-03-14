@@ -9,12 +9,12 @@ int main() {
 
 	cout << "Regular Polygon Tester Program" << endl << endl;
 	RegularPolygon rp1;
-	RegularPolygon rp2(5, 3.5);
-	RegularPolygon rp3(15);
-	RegularPolygon rp4(7, 6.5, 0, 0);
+	RegularPolygon rp4(7, 6.5, 1, 4);
 	RegularPolygon rp5;
 	rp5.set_n(10);
 	rp5.set_side(22);
+	rp5.set_x(14);
+	rp5.set_y(12);
 	
 	int testN = rp1.get_n();
 	double testSide = rp1.get_side();
@@ -29,7 +29,8 @@ int main() {
 	cout << "Y-Coordinate: " << testY << endl;
 	cout << "Perimeter: " << testP << endl << endl;
 
-	testN = rp2.get_n();
+	// test code I no longer need 
+	/*testN = rp2.get_n();
 	testSide = rp2.get_side();
 	testX = rp2.get_x();
 	testY = rp2.get_y();
@@ -53,7 +54,7 @@ int main() {
 	cout << "Length of sides: " << testSide << endl;
 	cout << "X-Coordinate: " << testX << endl;
 	cout << "Y-Coordinate: " << testY << endl;
-	cout << "Perimeter: " << testP << endl << endl;
+	cout << "Perimeter: " << testP << endl << endl;*/
 
 	testN = rp4.get_n();
 	testSide = rp4.get_side();

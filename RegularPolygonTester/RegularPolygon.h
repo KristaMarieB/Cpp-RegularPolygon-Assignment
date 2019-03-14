@@ -6,7 +6,10 @@ class RegularPolygon
 {
 public:
 	// constructors 
-	RegularPolygon(int = 3, double = 1, double = 0, double = 0); 
+	// no-arg
+	RegularPolygon(); 
+	// standard 
+	RegularPolygon(int, double, double, double);
 
 	// getters & setters
 	void set_n(int); 

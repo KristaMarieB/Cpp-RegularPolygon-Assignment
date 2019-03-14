@@ -1,6 +1,13 @@
 #include "RegularPolygon.h"
 
 
+RegularPolygon::RegularPolygon() 
+{
+	set_n(3);
+	set_side(1.0);
+	set_x(0.0);
+	set_y(0.0);
+}
 
 RegularPolygon::RegularPolygon(int n, double side, double x, double y)
 {
